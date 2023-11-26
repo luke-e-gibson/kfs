@@ -56,7 +56,7 @@ main:
 .halt:
     jmp .halt
 
-msg_hello: db 'Hello world!', ENDL, 0
+msg_hello: db 'Hello world! from kernel', ENDL, 0
 
 times 510-($-$$) db 0
 dw 0AA55h
